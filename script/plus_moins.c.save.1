@@ -38,22 +38,21 @@ int main()
 			if(count==1000)
 				break;
 		}
-			while(x!=y);
+		while(x!=y);
 	case 2:
 		printf("niveau moyen\n");
-                do
+		do
                 {
-                        y=rand()% 100+1;
-                        printf("Entrez un numero de votre choix:\n");
-                        scanf("%d",&x);
-                        plus_moins(x,y);
-                        count++;
-                        if(count==25)
-				printf("vous avez perdu");
-                                break;
-                }
-                while(x!=y);
-
+			count=0;
+			y=rand()% 100+1;
+			printf("Entrez un numero de votre choix:\n");
+			scanf("%d",&x);
+			count++;
+			plus_moins(x,y);
+			if(count=5)
+				break;
+		}
+		while(x!=y);
 
 	case 3:
 		printf("niveau difficile\n");
